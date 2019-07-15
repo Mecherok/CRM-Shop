@@ -10,11 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CRMUI {
-    public partial class CustomerForm : Form {
-        public Customer Customer { get; set; }
+    public partial class SellerForm : Form {
+        public Seller Seller { get; set; }
 
-        public CustomerForm() {
+        public SellerForm() {
             InitializeComponent();
+        }
+
+        public SellerForm(Seller seller) : this() {
+            Seller = seller;
+            textBox1.Text = seller.Name;
         }
 
         private void CustomerForm_Load(object sender, EventArgs e) {
@@ -22,9 +27,8 @@ namespace CRMUI {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            Customer = new Customer() {
-                Name = textBox1.Text
-            };
+            var s = Seller ?? new Seller();
+            s.Name = textBox1.Text;
             Close();
         }
     }

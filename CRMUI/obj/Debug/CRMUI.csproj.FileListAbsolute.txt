@@ -18,3 +18,5 @@ C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.csproj.CopyComplete
 C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.exe
 C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.pdb
 C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.CustomerForm.resources
+C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.SellerForm.resources
+C:\Users\Mecherok\source\repos\CRM\CRMUI\obj\Debug\CRMUI.ProductForm.resources
