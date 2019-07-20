@@ -50,12 +50,15 @@
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CashDesk.cs" />
     <Compile Include="Models\Check.cs" />
     <Compile Include="Models\CRMContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Generator.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Sell.cs" />
     <Compile Include="Models\Seller.cs" />
+    <Compile Include="Models\ShopComputerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
