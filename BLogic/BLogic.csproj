@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18800F0C-238D-4B5C-A27B-172E1E39F8FA}</ProjectGuid>
+    <ProjectGuid>{4DF54F08-CE11-41C7-9302-F00C660AC76B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLogic</RootNamespace>
-    <AssemblyName>BLogic</AssemblyName>
+    <RootNamespace>CrmBl</RootNamespace>
+    <AssemblyName>CrmBl</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,22 +49,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Cart.cs" />
-    <Compile Include="Models\CashDesk.cs" />
-    <Compile Include="Models\Check.cs" />
-    <Compile Include="Models\CRMContext.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Generator.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Sell.cs" />
-    <Compile Include="Models\Seller.cs" />
-    <Compile Include="Models\ShopComputerModel.cs" />
+    <Compile Include="Model\Cart.cs" />
+    <Compile Include="Model\CashDesk.cs" />
+    <Compile Include="Model\Check.cs" />
+    <Compile Include="Model\CRMContext.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\Generator.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Sell.cs" />
+    <Compile Include="Model\Seller.cs" />
+    <Compile Include="Model\ShopComputerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

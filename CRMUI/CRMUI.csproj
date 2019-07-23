@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B053105-048E-4F2A-8B8F-890B2B63C7A2}</ProjectGuid>
+    <ProjectGuid>{B23D2738-D9B2-4F57-AC1B-1B49AD477AC0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CRMUI</RootNamespace>
-    <AssemblyName>CRMUI</AssemblyName>
+    <RootNamespace>CrmUi</RootNamespace>
+    <AssemblyName>CrmUi</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,11 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CashBoxView.cs" />
     <Compile Include="Catalog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Catalog.Designer.cs">
       <DependentUpon>Catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelForm.Designer.cs">
+      <DependentUpon>ModelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductForm.cs">
       <SubType>Form</SubType>
@@ -87,6 +100,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Catalog.resx">
       <DependentUpon>Catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelForm.resx">
+      <DependentUpon>ModelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
@@ -125,8 +144,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLogic\BLogic.csproj">
-      <Project>{18800f0c-238d-4b5c-a27b-172e1e39f8fa}</Project>
-      <Name>BLogic</Name>
+      <Project>{4df54f08-ce11-41c7-9302-f00c660ac76b}</Project>
+      <Name>CrmBl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

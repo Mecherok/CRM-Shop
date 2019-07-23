@@ -1,4 +1,4 @@
-﻿using BLogic.Models;
+﻿using BLogic.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,8 +18,8 @@ namespace CRMUI {
         }
 
         public SellerForm(Seller seller) : this() {
-            Seller = seller;
-            textBox1.Text = seller.Name;
+            Seller = seller ?? new Seller();
+            textBox1.Text = Seller.Name;
         }
 
         private void CustomerForm_Load(object sender, EventArgs e) {
@@ -27,8 +27,8 @@ namespace CRMUI {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            var s = Seller ?? new Seller();
-            s.Name = textBox1.Text;
+            Seller = Seller ?? new Seller();
+            Seller.Name = textBox1.Text;
             Close();
         }
     }
